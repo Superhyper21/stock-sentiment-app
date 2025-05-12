@@ -18,7 +18,7 @@ if st.button("Predict"):
         predicted_price = predict_price(model, df)
 
         st.subheader("📊 Predicted Next Close Price")
-        st.metric(label=f"{ticker} Prediction", value=f"${predicted_price:.2f}")
+        st.metric(label=f"{ticker} Prediction", value=f"${predicted_price[0]:.2f}")
 
         st.subheader("🔍 Model Performance")
         st.write(f"R² Score: {score:.2f}")
