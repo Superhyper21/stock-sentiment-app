@@ -5,7 +5,7 @@ import requests
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 
-NEWS_API_KEY = "YOUR_NEWSAPI_KEY"
+NEWS_API_KEY = "a4a721494c2c4619b1966fd44163f588"
 
 def get_stock_data(ticker, start, end):
     data = yf.download(ticker, start=start, end=end)
